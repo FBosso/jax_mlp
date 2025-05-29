@@ -31,10 +31,23 @@ a = jnp.array([1,2,3])
 def algo(x):
     return jnp.where(x%2 == 0, x, x-3)
 
+#by adding this line i compile before the execution to make everything ready (thus faster)
 _ = algo(a)
     
 start_time = time.time()
 algo(a).block_until_ready() #block_until_ready() wait for the result before executing the next line
 end_time = time.time()
 print(f"Standard execution: {end_time - start_time}")
+# %%
+
+#note that the compilation will not work if we use the input parameter in conditions like below
+@jax.jit
+def algo_wrong(x):
+    if x % 2 == 0:
+        return x
+    else:
+        return x-3
+    
+_ = algo_wrong(a)
+
 # %%
