@@ -5,7 +5,6 @@ import jax.numpy as jnp
 from sklearn.datasets import load_iris
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 
 #load data
@@ -109,6 +108,8 @@ for epoch in range(epochs):
     
 plt.plot(test_acc, label="test")
 plt.plot(train_acc, label="train")
+plt.ylabel("Accuracy")
+plt.xlabel("Epochs")
 plt.legend()
 plt.show()
 
