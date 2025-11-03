@@ -1,7 +1,8 @@
 # Multi Layer Perceptron implementation in JAX
-<a href="https://mapflap.github.io"><img align="right" src="https://i.ibb.co/NspjQxV/logo.webp" alt="logo" width="220"></a>
 
 ## Overview
+
+<a href="https://francesco-bosso.github.io"><img align="right" src="https://francesco-bosso.github.io/ico_pizza.ico" alt="logo" width="220"></a>
 
 *This project provides a minimal implementation of a Multi-Layer Perceptron (MLP) classifier built from scratch in JAX and trained on the Iris dataset. It demonstrates the core components of a supervised learning workflow, including model definition, forward pass, loss computation, gradient-based optimization, and accuracy evaluation, all using JAX’s functional and composable API.*
 
