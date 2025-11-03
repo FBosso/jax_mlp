@@ -2,7 +2,13 @@
 
 ## Overview
 
-<a href="https://francesco-bosso.github.io"><img align="right" src="https://francesco-bosso.github.io/ico_pizza.ico" alt="logo"></a>
+<a href="https://francesco-bosso.github.io">
+  <img src="https://francesco-bosso.github.io/ico_pizza.ico" 
+       alt="logo" 
+       align="right" 
+       width="120" 
+       style="margin-left: 15px; margin-bottom: 10px;">
+</a>
 
 *This project provides a minimal implementation of a Multi-Layer Perceptron (MLP) classifier built from scratch in JAX and trained on the Iris dataset. It demonstrates the core components of a supervised learning workflow, including model definition, forward pass, loss computation, gradient-based optimization, and accuracy evaluation, all using JAX’s functional and composable API.*
 
